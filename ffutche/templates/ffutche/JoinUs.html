@@ -1,0 +1,144 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Maebe Foundation - Join us</title>
+        <link rel="stylesheet" href="{% static 'ffutche/Style.css' %}">
+        <link href="{% static 'ffutche/jqueryform.css' %}" rel="stylesheet">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+        <script type="text/javascript" src="{% static 'ffutche/jqueryform.js' %}"></script>
+    </head>
+    <body>
+        <header class="navArea">
+                <a href="Website.html"><img src="https://i.ibb.co/cQtkPYs/Website-Logo1.png" width="150"></a>
+            <ul>
+                <li class="moto">Bringing our furry friends home</li>
+                <li><a href="">Our Work</a></li>
+                <li><a href="">Gallery</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Contact Us</a></li>
+                <li><a href="Signin.html">Sign In</a></li>
+                <li><a href="JoinUs.html">Join Us</a></li>
+            </ul>
+        <br>
+        </header>
+        <section class="topcontainer">
+        <div class="joinus-container">
+                <form id="contact" method="post" action="">
+                        <div>
+                            <label for="contact_username">User Name:</label>
+                            <input type="text" id="contact_username" name="contact_username" pattern=".{1,8}" placeholder="Required" title="Must be at most 8 characters long"></input>
+                            <span class="error">This field is required</span>
+                        </div>
+                        <div>
+                            <label for="contact_psword">Password:</label>
+                            <input type="password" id="contact_psword" name="contact_psword" placeholder="Required" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{1,8}" title="Must be at most 8 characters with at least 1 digit, lowercase letter, uppercase letter"></input>
+                            <span class="error">This field is required</span>
+                        </div>
+                        <div>
+                          <label for="fname">First Name:</label>
+                          <input type="text" id="fname" name="fname"></input>
+                        </div>
+                        <div>
+                            <label for="middlename">Middle Name:</label>
+                            <input type="text" id="middlename" name="middlename"></input>
+                            <span class="error">This field is required</span>
+                        </div>
+                        <div>
+                          <label for="contact_lname">Last Name:</label>
+                          <input type="text" id="contact_lname" name="contact_lname" placeholder="Required" pattern=".{1,}" title="Last name is required"></input> 
+                          <span class="error">This field is required</span>
+                        </div>
+                        <div>
+                            <label for="contact_gender">Gender:</label>
+                            <input type="text" id="contact_gender" name="contact_gender" placeholder="Required" pattern=".{1,}" title="Please enter Male or Female"></input>
+                            <span class="error">This field is required</span>
+                        </div>
+                        <div>
+                            <label for="contact_street">Street Address:</label>
+                            <input type="text" id="contact_street" name="contact_street" placeholder="Required" pattern=".{1,}" title="Please enter a valid address"></input>
+                            <span class="error">This field is required</span>
+                        </div>
+                        <div>
+                            <label for="contact_city">City:</label>
+                            <input type="text" id="contact_city" name="contact_city" placeholder="Required" pattern=".{1,}" title="Please enter a valid City"></input>
+                            <span class="error">This field is required</span>
+                        </div>
+                        <div>
+                            <label for="contact_state">State:</label>
+                            <input type="text" id="contact_state" name="contact_state" placeholder="Required" pattern=".{1,}" title="Please enter a valid State"></input>
+                            <span class="error">This field is required</span>
+                        </div>
+
+                        <div>
+                            <label for="contact_zip">Zip Code:</label>
+                            <input type="number" id="contact_zip" name="contact_zip" placeholder="Required"pattern=".{1,}" title="Please enter a valid Zip Code"></input>
+                            <span class="error">This field is required</span>
+                        </div>
+                        <div>
+                            <label for="contact_email">Email:</label>
+                            <input type="email" id="contact_email" name="email" placeholder="Required" pattern="[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$" title="Please enter a valid Email eg. John@aol.com"></input>
+                            <span class="error">This field is required</span>
+                        </div>
+                        <div>
+                            <label for="contact_cell">Cell Phone:</label>
+                            <input type="tel" id="contact_cell" name="contact_cell" placeholder="Required" pattern=".{1,}" title="Please enter just the numbers no ()-"></input>
+                            <span class="error">This field is required</span>
+                        </div>
+                        <div>
+                            <label for="contact_country">Country:</label>
+                            <input type="text" id="contact_country" name="contact_country" placeholder="Required" pattern=".{1,}" title="Please enter a valid Country"></input>
+                            <span class="error">This field is required</span>
+                        </div>
+                        <div>
+                            <label for="contact_dob">Date of Birth:</label>
+                            <input type="test" id="contact_dob" name="contact_dob" placeholder="Required" pattern=".{1,}" title="Please enter just the numbers no / or -"></input>
+                            <span class="error">This field is required</span>
+                        </div>
+                        <div>
+                            <label for="org">Organization:</label>
+                            <input type="text" id="org" name="org"></input>
+                        </div>
+
+                        <div id="contact_submit">
+                            <button type="submit">Welcome!</button>
+                        </div>
+                </form>
+            </div>
+        </section>
+        <section class="bottom">
+                <span class="ourinfo">
+                    <p><strong>Maebe foundation</strong></p>
+                    <p>Address: 4324 E. Pet Lover Rd, Phoenix, AZ 85004</p>
+                    <p>Phone: (480) 333-5567</p>
+                    <p>Email:<a href="">contact@maebefoundation.com</a></p>
+                    <p>Website:<a href="Website.html">Maebefoundation.com</a></p>
+                </span>
+                <span class="links">
+                    <ul>
+                        <li><a href="">Get Involved</a></li><br>
+                        <li><a href="">Blog</a></li><br>
+                        <li><a href="webportal.html">Web Portal</a></li><br>
+                    </ul>
+                </span>
+                <span class="links2">
+                    <ul>
+                        <li><a href="">Earnings</a></li><br>
+                        <li><a href="">Events</a></li><br>
+                        <li><a href="">Support</a></li><br>
+                    </ul>
+                </span>
+            </section>
+            <section>
+                <footer class="site">
+                    <a href="">Site Map</a>
+                    |
+                    <a href="">Terms & Conditions</a>
+                    |
+                    <a href="">Privacy Policy</a>
+                    |
+                    Copyright &copy; 2019
+                </footer>
+            </section>
+    </body>
+</html>

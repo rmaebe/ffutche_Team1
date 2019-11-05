@@ -1,0 +1,44 @@
+body {
+    background-color: rgb(156, 127, 92);
+}
+
+.joinus-container {
+    text-align: center;
+    position: relative;
+    padding: 25px;
+    width: 35%;
+    background-color: blanchedalmond;
+    margin: auto;
+}
+
+form label {
+    display: inline-block;
+    width: 100px;
+  }
+   
+form div {
+    margin-bottom: 10px;
+}
+
+.error{
+    display: none;
+	margin-left: 10px;
+}		
+
+.error_show{
+	color: red;
+	margin-left: 10px;
+}
+
+input.invalid, textarea.invalid{
+	border: 2px solid red;
+}
+ 
+input.valid, textarea.valid{
+	border: 2px solid green;
+}
+
+.topcontainer {
+    width: 100%;
+    background-color: rgb(180, 178, 145);
+}
